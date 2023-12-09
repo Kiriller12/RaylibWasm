@@ -16,11 +16,10 @@ dotnet workload install wasm-tools
 
 ## Build
 
-You should use publish option for building, 
+You should use publish option for building.
 
-You can use Visual Studio for it.
-
-OR
+> [!WARNING]
+> Do not use Visual Studio publication, it may cause some strange errors!
 
 Just call this command from the root directory of the solution:
 ```
