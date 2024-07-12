@@ -26,12 +26,12 @@ namespace RaylibWasm
         {
             Raylib.BeginDrawing();
 
-            Raylib.ClearBackground(Color.RAYWHITE);
+            Raylib.ClearBackground(Color.White);
 
             Raylib.DrawFPS(4, 4);
-            Raylib.DrawText("All systems operational!", 4, 32, 20, Color.MAROON);
+            Raylib.DrawText("All systems operational!", 4, 32, 20, Color.Maroon);
             
-            Raylib.DrawTexture(logo, 4, 64, Color.WHITE);
+            Raylib.DrawTexture(logo, 4, 64, Color.White);
 
             Raylib.EndDrawing();
         }

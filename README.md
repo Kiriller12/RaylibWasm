@@ -48,14 +48,7 @@ While server is running you can use publish command to update your files without
 
 ## Notes
 
-This project includes webassembly build of raylib native 4.5 (`raylib.a` file), because it is not included with Raylib-cs nuget.
-
-It seems that Raylib-cs uses some outdated functions, that not present in raylib native builds, so I'd had to use `WasmAllowUndefinedSymbols` flag to compile without errors, so there will be some warnings about it:
-```
-1>EXEC : warning : undefined symbol: GetSoundsPlaying (referenced by top-level compiled C/C++ code)
-1>EXEC : warning : undefined symbol: rlDisableStatePointer (referenced by top-level compiled C/C++ code)
-1>EXEC : warning : undefined symbol: rlEnableStatePointer (referenced by top-level compiled C/C++ code)
-```
+This project includes webassembly build of raylib native 5.0 (`raylib.a` file), because it is not included with Raylib-cs nuget.
 
 Raylib-cs may still have some webassembly compatibility issues that have been mentioned [here](https://github.com/disketteman/DotnetRaylibWasm/issues/11) and [here](https://github.com/disketteman/DotnetRaylibWasm/issues/4).
 
