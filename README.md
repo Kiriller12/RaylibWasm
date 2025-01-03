@@ -4,6 +4,9 @@
 
 I've followed [DotnetRaylibWasm](https://github.com/stanoddly/DotnetRaylibWasm) example project and some official Microsoft documentation.
 
+> [!IMPORTANT]
+> Please read the instructions below for building and publishing the project, as this may affect its functionality and cause unexpected errors.
+
 ## Setup
 
 You must have .Net 8.0 installed before start.
@@ -15,8 +18,6 @@ dotnet workload install wasm-tools
 ```
 
 ## Build
-
-You should use publish option for building.
 
 > [!WARNING]
 > Do not use Visual Studio publication, it may cause some strange errors!
