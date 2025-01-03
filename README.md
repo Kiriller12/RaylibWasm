@@ -1,8 +1,8 @@
 # RaylibWasm
 
-.Net 8.0 webasssembly starter project using Raylib-cs nuget.
+.Net 8.0 webasssembly starter project using raylib-cs nuget.
 
-I've followed [DotnetRaylibWasm](https://github.com/disketteman/DotnetRaylibWasm) example project and some official Microsoft documentation.
+I've followed [DotnetRaylibWasm](https://github.com/stanoddly/DotnetRaylibWasm) example project and some official Microsoft documentation.
 
 ## Setup
 
@@ -48,14 +48,14 @@ While server is running you can use publish command to update your files without
 
 ## Notes
 
-This project includes webassembly build of raylib native 5.0 (`raylib.a` file), because it is not included with Raylib-cs nuget.
+This project includes webassembly build of raylib native 5.5 (`raylib.a` file), because it is not included with raylib-cs nuget.
 
-Raylib-cs may still have some webassembly compatibility issues that have been mentioned [here](https://github.com/disketteman/DotnetRaylibWasm/issues/11) and [here](https://github.com/disketteman/DotnetRaylibWasm/issues/4).
+Raylib-cs may still have some webassembly compatibility issues that have been mentioned [here](https://github.com/stanoddly/DotnetRaylibWasm/issues/11) and [here](https://github.com/stanoddly/DotnetRaylibWasm/issues/4).
 
 This project is not perfect, so I would welcome your suggestions and PR requests.
 
 ## Thanks
 
-- to [Ray](https://github.com/raysan5) and all [Raylib](https://github.com/raysan5/raylib) contributors for such a wonderful lib
-- to [ChrisDill](https://github.com/ChrisDill) for [Raylib C# bindings](https://github.com/ChrisDill/Raylib-cs)
-- to [disketteman](https://github.com/disketteman) for dotnet webassembly [example project](https://github.com/disketteman/DotnetRaylibWasm)
+- to [Ray](https://github.com/raysan5) and all [raylib](https://github.com/raysan5/raylib) contributors for such a wonderful lib
+- to [ChrisDill](https://github.com/ChrisDill) for [raylib C# bindings](https://github.com/ChrisDill/Raylib-cs)
+- to [stanoddly](https://github.com/stanoddly) for dotnet webassembly [example project](https://github.com/stanoddly/DotnetRaylibWasm)
