@@ -1,15 +1,41 @@
 # RaylibWasm
 
-.Net 8.0 webasssembly starter project using raylib-cs nuget.
+.Net 8+ webasssembly starter project using raylib-cs nuget.
 
 I've followed [DotnetRaylibWasm](https://github.com/stanoddly/DotnetRaylibWasm) example project and some official Microsoft documentation.
 
 > [!IMPORTANT]
 > Please read the instructions below for building and publishing the project, as this may affect its functionality and cause unexpected errors.
 
+## .Net 9+
+
+To build correctly with .Net 9 and later, you may need to slightly modify the main.js file to use new dotnet `runMain` syntax:
+
+```js
+import { dotnet } from './_framework/dotnet.js'
+
+const { getAssemblyExports, getConfig, runMain } = await dotnet
+    .withDiagnosticTracing(false)
+    .create();
+
+const config = getConfig();
+const exports = await getAssemblyExports(config.mainAssemblyName);
+
+dotnet.instance.Module['canvas'] = document.getElementById('canvas');
+
+function mainLoop() {
+    exports.RaylibWasm.Application.UpdateFrame();
+
+    window.requestAnimationFrame(mainLoop);
+}
+
+await runMain();
+window.requestAnimationFrame(mainLoop);
+```
+
 ## Setup
 
-You must have .Net 8.0 installed before start.
+You must have .Net 8+ installed before start.
 
 Then install wasm toolset:
 
