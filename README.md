@@ -10,7 +10,7 @@ I've followed [DotnetRaylibWasm](https://github.com/stanoddly/DotnetRaylibWasm) 
 ## Supported .Net versions
 
 > [!IMPORTANT]
-> The project has been updated to .Net 10 ("main" branch), version .Net 8 is available in the "net-8" branch.
+> This is the .Net 8 version. If you are using .Net 9+, then use the "main" branch.
 
 ## Setup
 
