@@ -1,5 +1,8 @@
 # RaylibWasm
 
+> [!WARNING]
+> Starting with version 8.1.0, [raylib-cs](https://github.com/raylib-cs/raylib-cs) supports the creation of WebAssembly projects. You can find an example and instructions [here](https://github.com/raylib-cs/raylib-cs/tree/main/Examples/Web). From this point on, RaylibWasm will be moved to a public archive and will no longer be updated.
+
 .Net 8+ webasssembly starter project using raylib-cs nuget.
 
 I've followed [DotnetRaylibWasm](https://github.com/stanoddly/DotnetRaylibWasm) example project and some official Microsoft documentation.
